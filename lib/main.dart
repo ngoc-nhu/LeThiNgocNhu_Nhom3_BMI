@@ -1,5 +1,9 @@
+import 'package:flutter_bmi_calculator/ChiTietMT.dart';
+import 'package:flutter_bmi_calculator/LoaiMTPage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bmi_calculator/screens/calculator_screen.dart';
+import 'package:flutter_bmi_calculator/MT_page.dart';
+import 'package:flutter_bmi_calculator/Models/LoaiMayTinh.dart';
+import 'package:flutter_bmi_calculator/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,12 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xFF0A0E21),
-        scaffoldBackgroundColor: Color(0xFF0A0E21),
+      title: 'Quản Lý Thông Tin Máy Tính',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
-      home: CalculatorScreen(),
+      home: LoginScreen(),
     );
-
   }
 }
